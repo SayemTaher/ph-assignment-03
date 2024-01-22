@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biker Shop</title>
+    <link rel="icon" href="/1.png" >
+    <title>Hockey's | Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Color Palette if necessary-->
@@ -18,14 +23,223 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              
             },
+            backgroundImage: {
+                'teenager-img': "url('/2.png')",
+                'program-img': "url('/3.png')",
+                'professional img': "url('/4.png')",
+      }
           },
         },
       };
     </script>
   </head>
-<body>
-    
-</body>
+  <body>
+    <header class="container mx-auto max-w-6xl">
+      <nav>
+        <div class="navbar bg-base-100 ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-stone-500"
+              >
+                <li><a class="text-orange-600">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a>Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl"
+              >Hockey<span class="text-red-600">'</span>s
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-5">
+              <li><a class="text-orange-600">Home</a></li>
+              <li>
+                <a href="" class="">About</a>
+              </li>
+              <li><a>Pages</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex items-center gap-5">
+            <div class="hidden lg:block text-stone-500">
+              <i class="fas fa-light fa-magnifying-glass"></i>
+            </div>
+            <div class="mr-4">
+            <a class="btn btn-error text-white">Get Ticket</a></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container mx-auto max-w-6xl p-5">
+      <section >
+        <div class="carousel w-full ">
+          <div id="slide1" class="carousel-item relative w-full ">
+            <img
+              src="/1.png"
+              class="w-full -z-10"
+            />
+           <div class="absolute inset-0  z-20 flex items-center justify-center lg:inset-auto lg:transform lg:-translate-y-1/2 lg:left-5 lg:bottom-1 gap-5 mt-36">
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+              class="w-full -z-10 rounded-2xl"
+            />
+            <div
+              class="absolute inset-0  z-20 flex items-center justify-center lg:inset-auto lg:transform lg:-translate-y-1/2 lg:left-5 lg:bottom-1 gap-5 mt-36"
+            >
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full -z-10 rounded-2xl"
+            />
+            <div
+              class="absolute inset-0  z-20 flex items-center justify-center lg:inset-auto lg:transform lg:-translate-y-1/2 lg:left-5 lg:bottom-1 gap-5 mt-36"
+            >
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg "
+              class="w-full -z-10 rounded-2xl"
+            />
+            <div
+              class="absolute inset-0  z-20 flex items-center justify-center lg:inset-auto lg:transform lg:-translate-y-1/2 lg:left-5 lg:bottom-1 gap-5 mt-36"
+            >
+              <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center pt-5 lg:justify-end lg:-mt-52 lg:pr-8  z-40">
+            <div class="flex flex-col gap-4 bg-black text-white p-5 rounded-2xl">
+            <h3 class=" text-lg ">Meet all the heroes from the field</h3>
+            <p class=" max-w-96 text-slate-500 ">Our club offers a fantastic opportunity for all of it's memebers to watch the game 
+            live without paying any fee.
+            </p>
+            </div>
+        </div>
+      </section>
+      <section class="mt-5  border-b border-2 border-dotted border-stone-500 border-t-0 border-l-0 border-r-0">
+        <div>
+            <div class="flex flex-col lg:mt-32 mt-10 justify-center items-center gap-5 p-10 border-t border-b border-r-0 border-l-0 border-dotted border-2 border-stone-500">
+                <h1 class="font-bold text-2xl text-black">Professional Hockeys Club</h1>
+                <span class="text-stone-500 lg:max-w-2xl text-center">We started our journey in 2010 and now our club is one of the most prestgious club of the city
+                    and it was only possible because of the contribution and trusts of our members.
+                </span>
+            </div>
+            <div class="flex  flex-col lg:flex-row gap-20 items-center  mb-20 mt-20 ">
+
+                <div class="flex flex-col gap-2 text-center justify-center items-center">
+                    <div class="radial-progress text-red-600 " style="--value:87; --size:10rem; --thickness: 1.5rem;" role="progressbar">87%</div>
+                    <div class="mt-5">
+                    <p class="text-bold text-black text-xl">Prayer Facility</p>
+                    <span class="w-20 lg:max-w-60 ">Our facilities for prayer 
+                         is 24 hours open</span></div>
+
+                </div>
+                <div class="flex flex-col gap-2 text-center justify-center items-center">
+                    <div class="radial-progress text-green-500" style="--value:95; --size:10rem; --thickness: 1.5rem;" role="progressbar">95%</div>
+                    <div class="mt-5">
+                    <p class="text-bold text-black text-xl">Experienced Coach</p>
+                    <span class="lg:max-w-60 w-20 ">Our every single coach has 
+                         enough experience and training.</span></div>
+
+                </div>
+                <div class="flex flex-col gap-2 text-center justify-center items-center">
+                    <div class="radial-progress text-orange-400" style="--value:90; --size:10rem; --thickness: 1.5rem;" role="progressbar">90%</div>
+                    <div class="mt-5">
+                    <p class="text-bold text-black text-xl ">Senior Player</p>
+                    <span class=" lg:max-w-60 w-20 ">Most of the players are senior here 
+                         as they are with the club from the beginning.</span></div>
+
+                </div>
+                <div class="flex flex-col gap-2 text-center justify-center items-center">
+                    <div class="radial-progress text-blue-600" style="--value:80; --size:10rem; --thickness: 1.5rem;" role="progressbar">80%</div>
+                    <div class="mt-5">
+                    <p class="text-bold text-black text-xl ">Training Ground</p>
+                    <span clsss="lg:max-w-60 w-20 ">Top class training ground 
+                         with professional ground staff.</span></div>
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+            <div class="flex flex-col justify-center items-center gap-5 p-10 border-t-0 border-b border-r-0 border-l-0 border-dotted border-2 border-stone-500">
+                <h1 class="font-bold text-2xl text-black">Program Sections</h1>
+                <span class="text-stone-500 lg:max-w-2xl text-center">At Icebreakers, we're passionate 
+                    about hockey and dedicated to providing an outstanding experience for players of all 
+                    ages and skill levels. Our program is designed to foster athletic skill, teamwork, 
+                    and a love for the game in a fun and competitive environment.
+                </span>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4 pt-10 grid-cols-1 lg:mb-10 mb-5">
+                
+                <div class="flex flex-col bg-gray-400 bg-blend-multiply justify-end lg:gap-5 gap-1  bg-[url('/2.png')] h-[244px] lg:h-[338px]  bg-no-repeat bg-center rounded-2xl lg:p-10 p-4">
+                    <h2 class="text-2xl text-white">Junior Program</h2>
+                    <span class="max-w-96 text-white">In our Hockey Academy, a fun and exciting introduction to the world of hockey 
+                        for our youngest players! Our junior program is designed to ignite a passion for
+                         the game in a safe and supportive environment.</span>
+                    <button class="btn btn-error text-white w-40">Register Now</button>
+                    
+                </div>
+                
+                <div class=" flex flex-col bg-gray-400 bg-blend-multiply justify-end lg:gap-5 gap-1 bg-[url('/3.png')] h-[244px] lg:h-[338px]  bg-no-repeat bg-center rounded-2xl lg:p-10 p-4">
+                    <h2 class="text-2xl text-white">Junior Program</h2>
+                    <span class="max-w-96 text-white">Our Next Gen Hockey Stars program is tailored for teenagers, blending skill development with competitive play.
+                         This program is perfect for those who want to take their game to the next level while enjoying the spirit of youth 
+                         hockey.</span>
+                    <button class="btn btn-error text-white w-40">Register Now</button>
+                </div>
+                
+                <div class=" flex flex-col bg-gray-400 bg-blend-multiply justify-end lg:gap-5 gap-1 bg-[url('/4.png')] h-[244px] lg:h-[450px]  lg:col-span-2  bg-no-repeat bg-center rounded-2xl lg:p-10 p-4">
+                    <h2 class="text-2xl text-white">Junior Program</h2>
+                    <span class="max-w-96 text-white">Elite Hockey Prospects is our program for aspiring professional players and 
+                        serious enthusiasts. This rigorous program is designed to refine skills, 
+                        enhance strategic understanding, and prepare players for high-level competition.</span>
+                    <button class="btn btn-error text-white w-40">Register Now</button>
+                </div>
+            </div>
+
+      </section>
+    </main>
+
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/2b7a164169.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
